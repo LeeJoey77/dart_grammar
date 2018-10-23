@@ -219,8 +219,8 @@ void dartGrammar() {
 
     //2. Parameters
     //函数参数有两种: required 和 optional, required 在前, optional 在后
-    //Optional parameters:
-    //optional parameters: optional named parameters 或 optional positional parameters, 但不能同时是两种
+    //Optional parameters 又分两种:
+    //ooptional named parameters 或 optional positional parameters, 但不能同时是两种
 
     //Optional named parameters:
     //函数定义, 类型在前, 参数名在后, 中间没有冒号, 参数用 {} 括起来
@@ -444,7 +444,22 @@ void dartGrammar() {
     .build();
     */
 
-    //对于返回值是对象的函数使用时
+    //对于返回值是对象的函数使用时要注意, 不能对返回值为 void 的函数构造级联 cascade
+
+    //十五. 控制流语句
+    //if else
+    //for 循环
+    //while 和 do-while
+    //break 和 continue
+    //switch case
+    //assert
+    //try-catch 和 throw
+    var message = StringBuffer('Dart is fun');
+    for (var i = 0; i < 5; i++) {
+      message.write('!');
+    }
+    print(message);
+
 
 }
 
